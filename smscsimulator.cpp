@@ -1221,6 +1221,8 @@ Session* sessionSockMap[32000]; // array of SMPP session by socket
 
 int main(int argc, const char * argv[])
 {
+    srand(static_cast<unsigned int>(time(nullptr)));
+
     printf("%s build time: %s %s\n",argv[0],__DATE__,__TIME__);
     
     //
